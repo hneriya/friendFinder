@@ -20,6 +20,15 @@
                 <button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-eye-open"></span> go home</button>
             </a>
         </div>
+        <div class="personalize-Name-Pic">
+            <hr>
+            <h3 class="aboutMeInfo"><strong>About You</strong></h3>
+            <h4 class="aboutMeInfo">Name (Required)</h4>
+            <input type="text" name="" id="name" placeholder="Your Name" class="form-control" required="">
+            <h4 class="aboutMeInfo">Link to Photo Image (Required)</h4>
+            <input type="text" name="" id="photo" placeholder="Your Photo" class="form-control" required="">
+            <hr>
+        </div>
         <div class="row">
             <div class="col-lg-12">
                 <div class="panel panel-default">
@@ -28,9 +37,9 @@
                     </div>
                     <div class="panel-body">
                         <form method="POST" role="form">
-                            <div class="dropdown">
+                            <div class="form-control dropdown">
                                 <label for="name">Question 1: how much do you like the cavs?</label>
-                                <select class = "answerValues">
+                                <select class="answerValues" id="q1">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -38,9 +47,9 @@
                                     <option value="5">5</option>
                                 </select>
                             </div>
-                            <div class="dropdown">
+                            <div class="form-control dropdown">
                                 <label for="name">Question 2: how much do you like liverpool f.c</label>
-                                <select class = "answerValues">
+                                <select class="answerValues" id="q2">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -48,9 +57,9 @@
                                     <option value="5">5</option>
                                 </select>
                             </div>
-                            <div class="dropdown">
+                            <div class="form-control dropdown">
                                 <label for="name">Question 3: how much do you like the shawshank redemption</label>
-                                <select class = "answerValues">
+                                <select class="answerValues" id="q3">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -58,9 +67,9 @@
                                     <option value="5">5</option>
                                 </select>
                             </div>
-                            <div class="dropdown">
+                            <div class="form-control dropdown">
                                 <label for="name">Question 4: how much do you dislike matt damon?</label>
-                                <select class = "answerValues">
+                                <select class="answerValues" id="q4">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -68,9 +77,9 @@
                                     <option value="5">5</option>
                                 </select>
                             </div>
-                            <div class="dropdown">
+                            <div class="form-control dropdown">
                                 <label for="name">Question 5: do you dislike eric garcetti?</label>
-                                <select class = "answerValues">
+                                <select class="answerValues" id="q5">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -78,9 +87,9 @@
                                     <option value="5">5</option>
                                 </select>
                             </div>
-                            <div class="dropdown">
+                            <div class="form-control dropdown">
                                 <label for="name">Question 6: do you like dogs?</label>
-                                <select class = "answerValues">
+                                <select class="answerValues" id="q6">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -88,9 +97,9 @@
                                     <option value="5">5</option>
                                 </select>
                             </div>
-                            <div class="dropdown">
+                            <div class="form-control dropdown">
                                 <label for="name">Question 7: do you like watching sports?</label>
-                                <select class = "answerValues">
+                                <select class="answerValues" id="q7">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -98,9 +107,9 @@
                                     <option value="5">5</option>
                                 </select>
                             </div>
-                            <div class="dropdown">
+                            <div class="form-control dropdown">
                                 <label for="name">Question 8: do you like playing sports?</label>
-                                <select class = "answerValues">
+                                <select class="answerValues" id="q8">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -108,9 +117,9 @@
                                     <option value="5">5</option>
                                 </select>
                             </div>
-                            <div class="dropdown">
+                            <div class="form-control dropdown">
                                 <label for="name">Question 9: do you like being in nature? </label>
-                                <select class = "answerValues">
+                                <select class="answerValues" id="q9">
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -118,40 +127,100 @@
                                     <option value="5">5</option>
                                 </select>
                             </div>
-                            <div class="dropdown">
+                            <div class="form-control dropdown">
                                 <label for="name">Question 10: how much do you enjoy long walks?</label>
-                                <select class = "answerValues">
-                                    <option id = "one" value="1">1</option>
-                                    <option id = "two" value="2">2</option>
-                                    <option id = "three" value="3">3</option>
-                                    <option id = "four" value="4">4</option>
-                                    <option id = "five" value="5">5</option>
+                                <select class="answerValues" id="q10">
+                                    <option id="one" value="1">1</option>
+                                    <option id="two" value="2">2</option>
+                                    <option id="three" value="3">3</option>
+                                    <option id="four" value="4">4</option>
+                                    <option id="five" value="5">5</option>
                                 </select>
                             </div>
                         </form>
                         <br>
                         <div class="text-right">
-                            <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="glyphicon glyphicon-fire"></span> submit</button>
+                            <button type="submit" class="btn btn-primary btn-md" id="add-btn-submit"><span class="glyphicon glyphicon-fire"></span> test submit!</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- the matching appears -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header noselect">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center noselect" id="myModalLabel">we recommend:</h4>
+                </div>
+                <div class="modal-body text-center noselect" id="recommendedBody">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger btn-simple" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script type="text/javascript">
-    // Question: What does this code do?
-    $("#add-btn").on("click", function(event) {
+    // when we click on the submit button:
+    $('#add-btn-submit').on('click', function() {
+            //creates a newFriend with all the information he inputted
+            var newFriend = {
+                name: $('#name').val().trim(),
+                photo: $('#photo').val().trim(),
+                scores: [parseInt($('#q1').val()), parseInt($('#q2').val()), parseInt($('#q3').val()), parseInt($('#q4').val()), parseInt($('#q5').val()), parseInt($('#q6').val()), parseInt($('#q7').val()), parseInt($('#q8').val()), parseInt($('#q9').val()), parseInt($('#q10').val())]
+            };
+            //this adds up all of the answers to create a array
+            function totalScoreForCharacter() {
+                var scoreTotal = 0;
+                for (var i = 0; i < newFriend.scores.length; i++) {
+                    scoreTotal += newFriend.scores[i];
+                    // console.log(scoreTotal)
+                }
+                return scoreTotal;
+            }
 
+            console.log(newFriend);
 
-    //when we click on add-btn(the submit button) then we will send all of our values to an array 
-    
+            $.post("/api/friends", newFriend).done(function(data) {
+                $('#recommendedBody').empty();
 
-    //post to the /api/new part of website this person's scores 
-        $.post("/api/new", newFriends)
-            .done(function(data) {
-                console.log(data);
-            });
-    });
+                newFriend.scoreTotal = totalScoreForCharacter()
+                for (var i = 0; i < data.length; i++) {
+                    displayMatches(data[i].photo, data[i].name);
+                }
+                //window will appear with suggestion for your new friend
+                $('#myModal').modal('show');
+            })
+
+        }) //end of on.click function
+
+    //var newFriend defined outside of the on click
+    var newFriend = {
+        name: $('#name').val().trim(),
+        photo: $('#photo').val().trim(),
+        scores: [parseInt($('#q1').val()), parseInt($('#q2').val()), parseInt($('#q3').val()), parseInt($('#q4').val()), parseInt($('#q5').val()), parseInt($('#q6').val()), parseInt($('#q7').val()), parseInt($('#q8').val()), parseInt($('#q9').val()), parseInt($('#q10').val())]
+    };
+
+    // this function displays the picture and name of the New Friend in the pop up window
+    function displayMatches(src, name) {
+        var defaultImg = '..public/images/tommy.jpg';
+        var img = new Image();
+        img.onload = function() {
+            // code to set the src on success
+            $('#recommendedBody').append('<img class="img-thumbnail img-responsive" src="' + src + '" alt="Best Match" style="width:350px;height:250px;">' + '<h5 class="text-default">' + name + '</h5><br><br>');
+        };
+        img.onerror = function() {
+            // doesn't exist or error loading
+
+            $('#recommendedBody').append('<img class="img-thumbnail img-responsive" src="' + defaultImg + '" alt="Best Match" style="width:350px;height:250px;">' + '<h5 class="text-default">' + name + '</h5><br><br>');
+        };
+
+        img.src = src; // fires off loading of image
+    }
     </script>
 </body>
 

@@ -1,61 +1,52 @@
-  
-// previously stored in home
-//   <script type="text/javascript">
-//     // $("#search-btn").on("click", function() {
-//     //   var searchedCharacter = $("#character-search").val().trim();
+  //starting friendsArray with 3 choices so there will always be a buddy to match with
 
-//     //   searchedCharacter = searchedCharacter.replace(/\s+/g, "").toLowerCase();
+  var friendsArray = [{
+    "name": "Millard Filmore",
+    "photo": "https://www.whitehouse.gov/sites/whitehouse.gov/files/images/first-family/13_millard_fillmore.jpg",
+    "scores": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+    ]
+},{
+    "name": "burt reynolds",
+    "photo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB8UP1ir2fgZhxN4ZbJik6HbtAiJeU65C3tAyVoOqGpzlq1WNUHLs8ACcP",
+    "scores": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+    ]
+}, {
+    "name": "Justice Clarence Thomas",
+    "photo": "http://static3.businessinsider.com/image/536d14b96bb3f7083d3e69c8/clarence-thomas-wrote-a-bizarre-opinion-about-religion-and-the-constitution.jpg",
+    "scores": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+    ]
+}];
 
-//     //   $.get("/api/" + searchedCharacter, function(data) {
-//     //     console.log(data);
-//     //     if (data) {
-//     //       $("#stats").show();
-//     //       $("#name").text(data.name);
-//     //       $("#role").text(data.role);
-//     //       $("#age").text(data.age);
-//     //       $("#force-points").text(data.forcePoints);
-//     //     }
-//     //     else {
-//     //       $("#name").text("The force is not strong with this one. Your character was not found.");
-//     //       $("#stats").hide();
-//     //     }
-//     //   });
-//     // });
-//   </script>
+// Export the array 
+module.exports = friendsArray;
 
-
-
-// in survey.html
-    //     <script type="text/javascript">
-
-
-    // // Question: What does this code do?
-    // $("#add-btn").on("click", function(event) {
-    //     event.preventDefault();
-    //     var newReservation = {
-    //         name: $("#name").val().trim(),
-    //         phoneNumber: $("#phoneNumber").val().trim(),
-    //         email: $("#email").val().trim(),
-    //         uniqueID: $("#uniqueID").val().trim()
-    //     };
-
-
-
-
-    // // Question: What does this code do?
-    // $("#add-btn").on("click", function(event) {
-    //     event.preventDefault();
-    //     var newReservation = {
-    //         name: $("#name").val().trim(),
-    //         phoneNumber: $("#phoneNumber").val().trim(),
-    //         email: $("#email").val().trim(),
-    //         uniqueID: $("#uniqueID").val().trim()
-    //     };
-
-    //     // Question: What does this code do??
-    //     $.post("/api/new", newReservation)
-    //         .done(function(data) {
-    //             console.log(data);
-    //         });
-    // });
-    // </script>
